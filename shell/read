@@ -1,0 +1,14 @@
+Lab: Building a Shell
+
+In this we will build a simple shell to execute user cmds.
+* much like bash shell in Linux.
+--> Understand various Concepts of process managmnt in Linux.
+
+TO KNOW:
+  fork - creates the copy of process as child process(identical of parent), where it creates the copy of storage, pid and every thing that is needed. Both the parent and child processes execute concurrently from the point immediately after the fork() call. The fork() call returns the Process ID (PID) of the child to the parent process, and 0 to the child process, allowing them to differentiate themselves.
+
+  exec - the current process image with a new program specified by its arguments. When an exec function is called, the current process's memory space, code, and data are overwritten with the new program. The PID of the process remains the same, but the program being executed changes.
+  
+  wait - It allows the parent to retrieve the termination status of the child process and clean up its entry in the process table, preventing the child from remaining a "zombie" process indefinitely.
+
+
